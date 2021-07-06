@@ -97,3 +97,52 @@ body {
   color: #fff;
   font-weight: 500;
 }
+
+@media (max-width: 992px) {
+  .container {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .card {
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    background: transparent;
+    margin: -20px 0;
+    box-shadow: none;
+  }
+
+  .container .card .imageBox {
+    position: relative;
+  }
+
+  .container .card .imageBox,
+  .container .card:hover .imageBox {
+    width: 80%;
+    height: 200px;
+    top: 100px;
+    left: 10%;
+  }
+
+  .container .card:hover .imageBox {
+    top: 80px;
+  }
+
+  .container .card .imageBox img,
+  .container .card:hover .imageBox img {
+    max-width: 100px;
+  }
+
+  .container .card .content {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: none;
+    border-top: 100px solid #fff;
+    padding: 20px 40px;
+  }
+}
